@@ -95,7 +95,6 @@ This repository includes five summary figures stored in the `figures/` directory
 - Dominant (Best) Electrode by Gesture Across Trials
 - When Peak Activation Occurs (Center of Peak Window)
 - Peak Activation Timing by Gesture (Mean ± SD)
-- Peak Activation Duration by Gesture
 
 In addition, the `figures/raw_rms_peak_plots/` folder contains raw EMG and RMS envelope plots for every individual trial.
 
