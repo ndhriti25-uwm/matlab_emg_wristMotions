@@ -100,38 +100,6 @@ fprintf('\n=== Timing Summary by Gesture ===\n');
 disp(timingSummary);
 
 % ===============================
-% PART C: Visualization
-% ===============================
-
-%% ===== RMS DISTRIBUTION (boxchart – no toolbox required) =====
-
-% Extract data
-x = double(resultsTable.meanRMS_mV);
-g = categorical(resultsTable.gestureName);
-
-% Remove missing values
-keep = ~isnan(x) & ~ismissing(g);
-x = x(keep);
-g = g(keep);
-
-% Plot
-figure('Position',[100 100 800 500])
-boxchart(g, x)
-
-ylabel("Mean RMS amplitude (mV)")
-title("Distribution of EMG Activation Strength by Gesture (Median + IQR)")
-grid on
-
-% Improve readability
-ax = gca;
-ax.FontSize = 13;
-
-% Save
-if ~exist("figures","dir"); mkdir("figures"); end
-exportgraphics(gcf, "figures/plot_RMS_distribution.png", "Resolution", 300);
-
-
-% ===============================
 % PART D: Save results to file
 % ===============================
 writetable(resultsTable, 'emg_analysis_results.csv');
