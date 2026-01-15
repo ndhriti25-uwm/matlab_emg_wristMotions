@@ -1,4 +1,4 @@
-# EMG Wrist & Hand Gesture Analysis (GRABMyo Dataset)
+# Automated EMG Analysis Pipeline for Hand and Wrist Gesture Characterization
 ## Overview
 This project analyzes multi-channel surface electromyography (sEMG) data from the GRABMyo dataset to characterize hand and wrist gestures. Raw EMG recordings are processed in MATLAB to compute RMS envelopes, identify dominant electrodes, detect peak activation windows, and summarize activation strength and timing across repeated trials and gestures. All analysis is implemented using custom MATLAB scripts without reliance on external toolboxes.
 ## Dataset
